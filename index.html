@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <title>Breakout Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+</head>
+<body>
+  <!-- Login-UI -->
+  <div id="login-container">
+    <input id="username" placeholder="Brukernavn" />
+    <button id="login-btn">Logg inn</button>
+    <div id="avg-container" style="margin-top:5px; display:none;">
+      Gjennomsnittspoeng: <span id="avg-score">0</span>
+    </div>
+  </div>
+
+  <!-- Canvas -->
+  <canvas id="myCanvas" width="480" height="320" style="display:none;"></canvas>
+
+  <!-- Stats-panel -->
+  <div id="stats" style="display:none; margin-top:10px;">
+    Liv: <span id="lives">0</span> |
+    Poeng: <span id="score">0</span>
+  </div>
+
+  <!-- Spill-logikk -->
+  <script src="game.js"></script>
+  <!-- Persistens og login-API -->
+  <script src="integration.js"></script>
+</body>
+</html>

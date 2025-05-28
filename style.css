@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  #login-container {
+    margin-top: 20px;
+  }
+  #login-container input,
+  #login-container button {
+    padding: 5px;
+    margin: 0 5px;
+  }
+  canvas {
+    background: #eee;
+    display: block;
+    margin: 20px auto;
+  }
+  #stats {
+    font-size: 18px;
+  }
+  
